@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Contact Facet Demo</title>
+    <link href="~/Assets/Stylesheets/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- jQuery library -->
+    <script src="~/Assets/Javascripts/Jquery/jquery-1.12.4.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.1.1.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/mvc/3.0/jquery.unobtrusive-ajax.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.6/jquery.validate.unobtrusive.min.js"></script>
+    <script src="~/Assets/Javascripts/forms.js"></script>
+</head>
+<body>
+<div class="container">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/demo">HOME</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="/demo/Register">Register</a></li>
+                <li><a href="/demo/who-we-are">Who We Are</a></li>
+                <li><a href="/demo/dumpdata">Flush Data</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    @Html.Sitecore().Placeholder("phContent")
+</div>
+</body>
+</html>

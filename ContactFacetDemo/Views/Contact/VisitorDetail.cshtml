@@ -1,0 +1,23 @@
+﻿@inherits WebViewPage<Contact>
+
+<div class="row col-lg-4">
+    <h1>VISITOR DETAILS</h1>
+    <div>
+        <p>Contact Id: @Model.ContactId</p>
+    </div>
+    <div>
+        <p> Email Address (Identifier): @Model.EmailAddress</p>
+    </div>
+    <div>
+        <p> First Name: @Model.FirstName</p>
+    </div>
+    <div>
+        <p>Last Name: @Model.LastName</p>
+    </div>
+    <div>
+        <p> Phone: @Model.Phone</p>
+    </div>
+    <div style="border: 1px dotted; color:green">
+        <p> Show Premium Content: @Model.OptIn</p>
+    </div>
+</div>

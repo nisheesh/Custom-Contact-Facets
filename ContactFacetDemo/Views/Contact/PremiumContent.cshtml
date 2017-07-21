@@ -1,0 +1,36 @@
+﻿@inherits WebViewPage<PremiumContentModel>
+
+<div class="row col-lg-6">
+    <div class="row">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+
+        @if (!Model.ShowPremiumContent)
+        {
+            using (Ajax.BeginForm("Subscribe", "Contact", null, new AjaxOptions { HttpMethod = "POST", OnSuccess = "window.demo.forms.PremiumContentSuccess(SubscribeForm, data, status, xhr)" }, new { id = "SubscribeForm" }))
+            {
+                <div class="form-group">
+                    <label for="EmailAddress">Email Address:</label>
+                    @Html.TextBoxFor(x => x.EmailAddress, new { type = "email", @class = "form-control" })
+                    @Html.ValidationMessageFor(x => x.EmailAddress)
+                </div>
+                <div>
+                    <button type="submit" class="btn btn-default">Subscribe</button>
+                </div>
+            }
+        }
+    </div>
+    <br />
+    <br />
+    <br />
+    <div class="row">
+        @if (Model.ShowPremiumContent || Sitecore.Context.PageMode.IsExperienceEditorEditing)
+        {
+           <h3>This is premium content - only for premium visitors</h3>
+            <img src="http://www.horizontalintegration.com/-/media/hiwebsite/images/digital-agency-page/sitecore-logo-carouselv2.png" alt="sitecore"/>
+            <a href="http://www.horizontalintegration.com/digital-agency">Click here for more details...</a>
+        }
+    </div>
+</div>
+

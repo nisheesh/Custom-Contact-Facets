@@ -1,0 +1,8 @@
+C:\inetpub\Projects\ContactFacetDemo\ContactFacetDemo.Data\bin\Debug\ContactFacetDemo.Data.dll
+C:\inetpub\Projects\ContactFacetDemo\ContactFacetDemo.Data\bin\Debug\ContactFacetDemo.Data.pdb
+C:\inetpub\Projects\ContactFacetDemo\ContactFacetDemo.Data\bin\Debug\Sitecore.Analytics.dll
+C:\inetpub\Projects\ContactFacetDemo\ContactFacetDemo.Data\bin\Debug\Sitecore.Analytics.Model.dll
+C:\inetpub\Projects\ContactFacetDemo\ContactFacetDemo.Data\bin\Debug\Sitecore.Kernel.dll
+C:\inetpub\Projects\ContactFacetDemo\ContactFacetDemo.Data\obj\Debug\ContactFacetDemo.Data.csprojResolveAssemblyReference.cache
+C:\inetpub\Projects\ContactFacetDemo\ContactFacetDemo.Data\obj\Debug\ContactFacetDemo.Data.dll
+C:\inetpub\Projects\ContactFacetDemo\ContactFacetDemo.Data\obj\Debug\ContactFacetDemo.Data.pdb
